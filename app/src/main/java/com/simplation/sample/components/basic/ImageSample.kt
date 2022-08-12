@@ -16,14 +16,15 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import coil.compose.rememberImagePainter
-import com.simplation.sample.ui.theme.GreetingCardTheme
+import com.simplation.sample.ui.theme.SamplesTheme
+import com.simplation.sample.R
 
 class ImageSample : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         setContent {
-            GreetingCardTheme {
+            SamplesTheme {
                 ImageDemo()
                 CoilImageDemo()
             }
@@ -68,11 +69,11 @@ fun CoilDemo() {
 
 @Composable
 fun CoilImageDemo() {
-    var flag by remember {
+    /*var flag by remember {
         mutableStateOf(true)
     }
 
-    /*CoilImage(
+    CoilImage(
         imageModel = "https://coil-kt.github.io/coil/images/coil_logo_black.svg",
         contentDescription = null,
         modifier = Modifier
@@ -91,7 +92,7 @@ fun CoilImageDemo() {
 @Preview
 @Composable
 fun PreviewCoilImageDemo() {
-    GreetingCardTheme {
+    SamplesTheme {
         CoilImageDemo()
     }
 }
@@ -99,7 +100,7 @@ fun PreviewCoilImageDemo() {
 @Preview
 @Composable
 fun PreviewCoilDemo() {
-    GreetingCardTheme {
+    SamplesTheme {
         CoilDemo()
     }
 }
@@ -107,7 +108,7 @@ fun PreviewCoilDemo() {
 @Preview
 @Composable
 fun PreviewImage() {
-    GreetingCardTheme {
+    SamplesTheme {
         ImageDemo()
     }
 }

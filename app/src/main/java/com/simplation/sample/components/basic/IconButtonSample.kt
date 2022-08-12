@@ -21,14 +21,14 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.simplation.sample.ui.theme.GreetingCardTheme
+import com.simplation.sample.ui.theme.SamplesTheme
 
 class IconButtonSample : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         setContent {
-            GreetingCardTheme {
+            SamplesTheme {
                 // IconButton 生成一个可点击的图标按钮
                 IconButtonDemo()
             }
@@ -89,7 +89,7 @@ fun IconButtonDemo() {
 @Preview
 @Composable
 fun PreviewIconButton() {
-    GreetingCardTheme {
+    SamplesTheme {
         IconButtonDemo()
     }
 }
@@ -97,7 +97,7 @@ fun PreviewIconButton() {
 @Composable
 @Preview
 fun PreviewMyIconButton() {
-    GreetingCardTheme {
+    SamplesTheme {
         ShowMyIconButton()
     }
 }

@@ -1,7 +1,9 @@
 <resources>
-    <string name="app_name">Greeting Card</string>
+    <string name="app_name">Jetpack Compose Samples</string>
 
     <string name="content">桃之夭夭，灼灼其华。之子于归，宜其室家。</string>
     <string name="content1">桃之夭夭，灼灼其华。</string>
     <string name="content2">之子于归，宜其室家。</string>
+    
+    <string name="agreement">用户协议内容</string>
 </resources>

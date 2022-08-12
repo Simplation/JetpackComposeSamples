@@ -9,14 +9,14 @@ import androidx.compose.material3.FloatingActionButton
 import androidx.compose.material3.Icon
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
-import com.simplation.sample.ui.theme.GreetingCardTheme
+import com.simplation.sample.ui.theme.SamplesTheme
 
 class FloatingActionButtonSample : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         setContent {
-            GreetingCardTheme {
+            SamplesTheme {
                 FloatingActionButtonDemo()
             }
         }
@@ -38,7 +38,7 @@ fun FloatingActionButtonDemo() {
 @Preview
 @Composable
 fun PreviewFloatingActionButton() {
-    GreetingCardTheme {
+    SamplesTheme {
         FloatingActionButtonDemo()
     }
 }

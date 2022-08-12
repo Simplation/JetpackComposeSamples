@@ -10,14 +10,14 @@ import androidx.compose.material3.Icon
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
-import com.simplation.sample.ui.theme.GreetingCardTheme
+import com.simplation.sample.ui.theme.SamplesTheme
 
 class IconSample : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         setContent {
-            GreetingCardTheme {
+            SamplesTheme {
                 IconDemo()
             }
         }
@@ -39,7 +39,7 @@ fun IconDemo() {
 @Preview
 @Composable
 fun PreviewIcon() {
-    GreetingCardTheme {
+    SamplesTheme {
         IconDemo()
     }
 }

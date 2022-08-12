@@ -15,13 +15,13 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.withStyle
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.simplation.sample.ui.theme.GreetingCardTheme
+import com.simplation.sample.ui.theme.SamplesTheme
 
 class CardSample : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            GreetingCardTheme {
+            SamplesTheme {
                 CardDemo()
             }
         }
@@ -62,7 +62,7 @@ fun CardDemo() {
 @Preview
 @Composable
 fun PreviewCardDemo() {
-    GreetingCardTheme {
+    SamplesTheme {
         CardDemo()
     }
 }

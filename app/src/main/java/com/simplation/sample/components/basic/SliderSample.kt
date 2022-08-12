@@ -8,14 +8,14 @@ import androidx.compose.material3.SliderDefaults
 import androidx.compose.runtime.*
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
-import com.simplation.sample.ui.theme.GreetingCardTheme
+import com.simplation.sample.ui.theme.SamplesTheme
 
 class SliderSample : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         setContent {
-            GreetingCardTheme {
+            SamplesTheme {
                 SliderDemo()
             }
         }
@@ -45,7 +45,7 @@ fun SliderDemo() {
 @Preview
 @Composable
 fun PreviewSliderDemo() {
-    GreetingCardTheme {
+    SamplesTheme {
         SliderDemo()
     }
 }

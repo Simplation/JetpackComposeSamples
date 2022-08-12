@@ -25,13 +25,13 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.simplation.sample.data.Message
 import com.simplation.sample.data.MsgData
-import com.simplation.sample.ui.theme.GreetingCardTheme
+import com.simplation.sample.ui.theme.SamplesTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            GreetingCardTheme {
+            SamplesTheme {
                 MessageCard(msg = Message("Jetpack Compose 博物馆", "已经开始更新了"))
             }
         }
@@ -100,7 +100,7 @@ fun Conversation(messages: List<Message>) {
 @Preview(uiMode = Configuration.UI_MODE_NIGHT_YES, showBackground = true, name = "Dark Mode")
 @Composable
 fun PreviewMessageCard() {
-    GreetingCardTheme(darkTheme = true) {
+    SamplesTheme(darkTheme = true) {
 //        MessageCard(msg = Message("Jetpack Compose 博物馆", "已经开始更新了"))
         Conversation(messages = MsgData.messages)
     }

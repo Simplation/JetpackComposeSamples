@@ -19,14 +19,14 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.withStyle
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.simplation.sample.ui.theme.GreetingCardTheme
+import com.simplation.sample.ui.theme.SamplesTheme
 
 class SurfaceSample : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         setContent {
-            GreetingCardTheme {
+            SamplesTheme {
                 SurfaceDemo()
             }
         }
@@ -78,7 +78,7 @@ fun SurfaceDemo() {
 @Preview(device = "id:Nexus 6", showSystemUi = true)
 @Composable
 fun PreviewSurface() {
-    GreetingCardTheme {
+    SamplesTheme {
         SurfaceDemo()
     }
 }

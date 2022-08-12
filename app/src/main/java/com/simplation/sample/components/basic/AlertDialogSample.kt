@@ -15,14 +15,14 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.compose.ui.window.Dialog
-import com.simplation.sample.ui.theme.GreetingCardTheme
+import com.simplation.sample.ui.theme.SamplesTheme
 
 class AlertDialogSample : ComponentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            GreetingCardTheme {
+            SamplesTheme {
                 AlertDialogDemo()
             }
         }
@@ -99,7 +99,7 @@ fun AlertDialogDemo() {
 @Preview
 @Composable
 fun PreviewShowDialog() {
-    GreetingCardTheme {
+    SamplesTheme {
         DialogDemo()
     }
 }
@@ -107,7 +107,7 @@ fun PreviewShowDialog() {
 @Preview
 @Composable
 fun PreviewShowAlertDialog() {
-    GreetingCardTheme {
+    SamplesTheme {
         AlertDialogDemo()
     }
 }
