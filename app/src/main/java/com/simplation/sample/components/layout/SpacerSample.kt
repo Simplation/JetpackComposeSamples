@@ -16,23 +16,11 @@ import com.simplation.sample.ui.theme.SamplesTheme
 @Composable
 fun SpacerDemo() {
     Row {
-        Box(
-            modifier = Modifier
-                .size(size = 100.dp)
-                .background(color = Color.Red)
-        )
-        Spacer(modifier = Modifier.width(width = 10.dp))
-        Box(
-            Modifier
-                .size(size = 100.dp)
-                .background(color = Color.Magenta)
-        )
+        Box(modifier = Modifier.size(100.dp).background(Color.Red))
+        Spacer(modifier = Modifier.width(20.dp))
+        Box(modifier = Modifier.size(100.dp).background(Color.Magenta))
         Spacer(modifier = Modifier.weight(1f))
-        Box(
-            Modifier
-                .size(size = 100.dp)
-                .background(color = Color.Black)
-        )
+        Box(modifier = Modifier.size(100.dp).background(Color.Green))
     }
 }
 

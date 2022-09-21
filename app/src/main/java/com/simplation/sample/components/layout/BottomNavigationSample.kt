@@ -21,8 +21,6 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.simplation.sample.ui.theme.SamplesTheme
 
-class BottomNavigationSample {}
-
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun ScaffoldDemo() {
